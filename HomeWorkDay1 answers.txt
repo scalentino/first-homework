@@ -1,0 +1,73 @@
+Book: The Swift Programming Language
+https://docs.swift.org/swift-book/
+1. Read: Control Transfer Statement - Control Flow Section
+2. Read: API Availability - Control Flow Section
+3. Read: Recursive Enumerations -
+4. Read: Subscript -
+5. Read: Convenience initializer - Initialization Section
+6. Read: Deinitialization -
+7. Read: Optional Chaining -
+9. Read: Downcasting - Type Casting Section
+10. Read. Delegation - Protocols Section
+10. Read: Optional Protocol Requirements - Protocols Section
+11. Read: Automatic Reference Counting -
+
+
+
+
+## Questions:
+What is the difference between var and let?
+
+let is used to declare an immutable constant. You cannot change the value of it later.
+var is used to create a mutable variable that you can change later.
+
+What is an optional?
+
+An optional in Swift is basically a constant or variable that can hold a value OR no value. The value can or cannot be nil. It is denoted by appending a “?” after the type declaration.
+
+What is optional chaining vs optional binding?
+
+Optional binding is used to check whether an optional variable or constant has a non-nil value, and if so, assign that value to a temporary, non-optional variable while Optional chaining allows us to call properties, methods, and subscripts on an optional that might be nil. If any of the chained values return nil, the return value will be nil.
+
+What are the different ways to unwrap an optional? How do they work? Are they safe?
+
+There are only seven ways to unwrap an optional in Swift
+
+Forced unwrapping — unsafe.
+Implicitly unwrapped variable declaration — unsafe in many cases.
+Optional binding — safe.
+Optional chaining — safe.
+Nil coalescing operator — safe.
+Guard statement — safe.
+Optional pattern — safe.
+
+What is a closure?
+
+Closures are self-contained blocks of functionality that can be passed around and used in your code. Closures in Swift are similar to blocks in C and Objective-C and to lambdas in other programming languages.
+
+What is the difference between a class and a struct?
+
+structs are value types whereas classes are reference types. When you copy a struct, you end up with two unique copies of the data. When you copy a class, you end up with two references to one instance of the data. It's a crucial difference, and it affects your choice between classes or structs.
+
+What is the syntax '??' do?
+
+The nil-coalescing operator (a ?? b) unwraps an optional a if it contains a value, or returns a default value b if a is nil. The expression a is always of an optional type. The expression b must match the type that’s stored inside a
+
+What is a tuple?
+
+a tuple is a group of different values. And, each value inside a tuple can be of different data types. Suppose we need to store information about the name and price of a product, we can create a tuple with a value to store name (string) and another value to store price (float)
+
+What is Any vs AnyObject?
+
+Any can represent an instance of any type at all, including function types. AnyObject can represent an instance of any class type.
+
+What is a protocol?
+
+a protocol defines a blueprint of methods or properties that can then be adopted by classes (or any other types). We use the protocol keyword to define a protocol.
+
+What is Delegation
+
+ delegate is a controller object with a defined interface that can be used to control or modify the behavior of another object
+
+Read this article
+https://developer.apple.com/documentation/swift/choosing_between_structures_and_classes
